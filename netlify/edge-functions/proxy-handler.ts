@@ -225,7 +225,7 @@ export default async (request: Request, context: Context) => {
       // 添加 CORS 头
       newResponse.headers.set('Access-Control-Allow-Origin', '*');
       newResponse.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-      newResponse.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept, Origin, Range');
+      newResponse.headers.set('Access-Control-Allow-Headers', '*');
       
       // 移除可能导致问题的安全头部
       newResponse.headers.delete('Content-Security-Policy');
@@ -650,7 +650,7 @@ export default async (request: Request, context: Context) => {
       // 添加 CORS 头
       newResponse.headers.set('Access-Control-Allow-Origin', '*');
       newResponse.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-      newResponse.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept, Origin, Range');
+      newResponse.headers.set('Access-Control-Allow-Headers', '*');
       
       // 移除可能导致问题的安全头部
       newResponse.headers.delete('Content-Security-Policy');
