@@ -142,7 +142,7 @@ export default async (request: Request, context: Context) => {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With, Accept, Origin, Range",
+        "Access-Control-Allow-Headers": "*",
         "Access-Control-Max-Age": "86400", // 24小时缓存预检响应
         "Cache-Control": "public, max-age=86400"
       }
